@@ -1,17 +1,36 @@
 <?php
 
 class albumModel
-{
-    public $MSSV;
-    public $HOTEN;
-    
+{    
     function __construct() {
         $this->Title = "";
         $this->ReleaseDate = "";
         $this->ArtistID = "";
         $this->CoverPath = "";
     }
-    
+    public static function findByName($name)
+    {
+        $mysqli = connect();
+        $mysqli->query("SET NAMES utf8");
+        $query = "SELECT * FROM album WHERE Title LIKE '%$name%'";
+        $result = $mysqli->query($query);
+        $albs = array();
+        if ($result) 
+        {            
+            foreach ($result as $row) {
+                $ab = new albumModel();
+                $ab->AlbumID = $row["AlbumID"];
+                $ab->Title = $row["Title"];
+                $ab->ReleaseDate = $row["ReleaseDate"];     
+                $ab->ArtistID = $row["ArtistID"]; 
+                $ab->CoverPath = $row["CoverPath"];     
+                $albs[] = $ab; //add an item into array
+            }
+        }
+
+        $mysqli->close();
+        return $albs;
+    }
     public static function listAll() {
         $mysqli = connect();
         $mysqli->query("SET NAMES utf8");
@@ -30,6 +49,7 @@ class albumModel
                 $albs[] = $ab; //add an item into array
             }
         }
+
         $mysqli->close();
         return $albs;
     }

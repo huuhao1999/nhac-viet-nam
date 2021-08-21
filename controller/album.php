@@ -8,6 +8,7 @@ class albumController
         $VIEW = "./view/DanhSachSV.phtml";
         require("./template/template.phtml");
     }
+
     public function add()
     {
         $data = "";

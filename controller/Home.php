@@ -4,8 +4,11 @@ class HomeController
 {
     public function index()
     {
-        $data = "Hello world !!!!";        
+        $dataAlbums = albumModel::listAll();
+        $dataGenre = genreModel::listAll();
+        $dataArtist = artistModel::listAll();    
+       // echo  json_encode($dataArtist);
         $VIEW = "./view/TrangChu.phtml";
-        require("./template/template.phtml");
+        require("./view/TrangChu.phtml");
     }
 }
