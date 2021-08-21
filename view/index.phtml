@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link href="/public/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="p-5 text-center bg-image" style="
+          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg');
+          height: 200px;
+        ">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                            <h1 class="mb-3">Banner</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <div class="d-flex">
+                    <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+                        <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="20" alt=""
+                            loading="lazy" style="margin-top: 2px;" />
+                    </a>
+                    </form>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-center" style="padding: 0.5rem;">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-rounded  bg-define-1st" href="#">Tìm kiếm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-rounded bg-define-1st" style="margin: 0 2rem;" href="#">
+                                Thêm bài hát mới
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-rounded bg-define-1st" href="#">
+                                Thêm album
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <div class="container-body">
+            <div class="side-bar bg-light" style="border-right: 2px solid #E0E0E0;">
+                <div class="card">
+                    <h6 class="card-header bg-define-1st">CÁC THỂ LOẠI</h5>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <a href="#" class="list-group-item">Thể loại 1</a>
+                                <a href="#" class="list-group-item">Thể loại 2</a>
+                                <a href="#" class="list-group-item">Thể loại 3</a>
+                                <a href="#" class="list-group-item">Thể loại 4</a>
+                            </ul>
+                        </div>
+                </div>
+                <hr style="margin: 2rem;">
+                <div class="card">
+                    <h6 class="card-header bg-define-1st">CÁC CA SĨ / NHÓM NHẠC</h5>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <a href="#" class="list-group-item">Ca sĩ 1</a>
+                                <a href="#" class="list-group-item">Ca sĩ 2</a>
+                                <a href="#" class="list-group-item">Ca sĩ 3</a>
+                                <a href="#" class="list-group-item">Ca sĩ 4</a>
+                                <a href="#" class="list-group-item">Ca sĩ 1</a>
+                                <a href="#" class="list-group-item">Ca sĩ 2</a>
+                                <a href="#" class="list-group-item">Ca sĩ 3</a>
+                                <a href="#" class="list-group-item">Ca sĩ 4</a>
+                                <a href="#" class="list-group-item">Ca sĩ 1</a>
+                                <a href="#" class="list-group-item">Ca sĩ 2</a>
+                                <a href="#" class="list-group-item">Ca sĩ 3</a>
+                                <a href="#" class="list-group-item">Ca sĩ 4</a>
+                            </ul>
+                        </div>
+                </div>
+
+            </div>
+            <!-- Main content -->
+            <div class="bg-light" style="width: 60%; height: auto; min-height: 40rem; padding: 2rem;">
+                <h3 style="color: #0277BD;">TÌM KIẾM</h3>
+                <div>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <h5>Từ khóa</h5>
+                        <input type="search" id="input-search" class="form-control rounded" style="width: 20rem;"
+                            placeholder="Từ khóa" />
+
+                        <button type="button" id="button-search" class="btn btn-primary bg-define-1st btn-floating">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div style="padding: 0.75rem; text-align: center;">
+                        <input type="checkbox" class="btn-check" id="check-artist" autocomplete="off" />
+                        <label class="btn btn-primary btn-rounded bg-define-1st" for="check-artist">Ca sĩ</label>
+
+                        <input type="checkbox" class="btn-check" id="check-album" autocomplete="off" />
+                        <label class="btn btn-primary btn-rounded bg-define-1st"
+                            style="margin-left: 1rem; margin-right: 1rem;" for="check-album">Album</label>
+
+                        <input type="checkbox" class="btn-check" id="check-song" autocomplete="off" />
+                        <label class="btn btn-primary btn-rounded bg-define-1st" for="check-song">Bài hát</label>
+                    </div>
+                    <div id="alert" style="display:none; color: red; text-align: end;">Thông báo</div>
+                    <hr>
+                </div>
+                <div class="body-content" style="overflow: auto; height: 100%">
+                    <h5>Kết quả</h5>
+                    <div>
+                        <h6 style="color: #0277BD;"><i class="fas fa-angle-double-right"></i>&ensp;BÀI HÁT</h6>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6 style="color: #0277BD;"><i class="fas fa-angle-double-right"></i>&ensp;ALBUM</h6>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6 style="color: #0277BD;"><i class="fas fa-angle-double-right"></i>&ensp;CA SĨ / NHÓM NHẠC
+                        </h6>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End main content -->
+            <div class="side-bar bg-light" style="border-left: 2px solid #E0E0E0;">
+                <div class="card">
+                    <h6 class="card-header bg-define-2nd">ĐĂNG NHẬP</h5>
+                        <div class="card-body" style="width: 95%">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text border-0"><i class="fas fa-user-circle"></i></span>
+                                <input type="search" class="form-control rounded" placeholder="Tên đăng nhập" />
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text border-0"><i class="fas fa-edit"></i></span>
+                                <input type="password" class="form-control rounded" placeholder="Mật khẩu" />
+                            </div>
+                            <button type="button" class="btn btn-success btn-rounded bg-define-2nd"
+                                style="float:right">Đăng
+                                nhập</button>
+                        </div>
+                </div>
+                <hr style="margin: 2rem;">
+                <div class="card">
+                    <h6 class="card-header bg-define-1st">ALBUM MỚI</h5>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <a href="#" class="list-group-item">Ca sĩ 1</a>
+                                <a href="#" class="list-group-item">Ca sĩ 2</a>
+                                <a href="#" class="list-group-item">Ca sĩ 3</a>
+                                <a href="#" class="list-group-item">Ca sĩ 4</a>
+                                <a href="#" class="list-group-item">Ca sĩ 1</a>
+                                <a href="#" class="list-group-item">Ca sĩ 2</a>
+                                <a href="#" class="list-group-item">Ca sĩ 3</a>
+                                <a href="#" class="list-group-item">Ca sĩ 4</a>
+                                <a href="#" class="list-group-item">Ca sĩ 1</a>
+                                <a href="#" class="list-group-item">Ca sĩ 2</a>
+                                <a href="#" class="list-group-item">Ca sĩ 3</a>
+                                <a href="#" class="list-group-item">Ca sĩ 4</a>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                1712837 - Mang Viên Triệu
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+
+</html>
