@@ -12,7 +12,8 @@ class albumModel
     {
         $mysqli = connect();
         $mysqli->query("SET NAMES utf8");
-        $query = "SELECT * FROM album WHERE Title LIKE '%$name%'";
+        
+        $query = "SELECT album.*, COUNT(album_details.AlbumID) as sum_song from album LEFT JOIN album_details on album_details.AlbumID = album.AlbumID Where album.Title LIKE '%$name%' GROUP By album.AlbumID";
         $result = $mysqli->query($query);
         $albs = array();
         if ($result) 
@@ -24,6 +25,7 @@ class albumModel
                 $ab->ReleaseDate = $row["ReleaseDate"];     
                 $ab->ArtistID = $row["ArtistID"]; 
                 $ab->CoverPath = $row["CoverPath"];     
+                $ab->sumSong = $row["sum_song"];     
                 $albs[] = $ab; //add an item into array
             }
         }
